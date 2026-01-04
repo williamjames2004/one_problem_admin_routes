@@ -54,7 +54,7 @@ const CodeForm = () => {
       test_cases: testCases,
     };
 
-    await axios.post("http://localhost:5000/code/create", payload);
+    await axios.post("https://one-problem-per-day.onrender.com/code/create", payload);
 
     alert("Code problem created successfully");
   };
@@ -178,5 +178,6 @@ const CodeForm = () => {
     </form>
   );
 };
+
 
 export default CodeForm;
