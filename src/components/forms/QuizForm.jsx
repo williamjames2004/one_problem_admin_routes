@@ -61,7 +61,7 @@ const QuizForm = () => {
       questions,
     };
 
-    await axios.post("http://localhost:5000/quiz/create", payload);
+    await axios.post("https://one-problem-per-day.onrender.com/quiz/create", payload);
 
     alert("Quiz created successfully");
   };
@@ -145,5 +145,6 @@ const QuizForm = () => {
     </form>
   );
 };
+
 
 export default QuizForm;
