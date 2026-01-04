@@ -20,7 +20,7 @@ const Login = ({ onLoginSuccess }) => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/admin/login",
+        "https://one-problem-per-day.onrender.com/admin/login",
         form
       );
 
@@ -67,5 +67,6 @@ const Login = ({ onLoginSuccess }) => {
     </div>
   );
 };
+
 
 export default Login;
