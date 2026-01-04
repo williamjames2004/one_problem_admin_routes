@@ -39,7 +39,7 @@ const MathForm = () => {
     };
 
     try {
-      await axios.post("http://localhost:5000/math/create", payload);
+      await axios.post("https://one-problem-per-day.onrender.com/math/create", payload);
       alert("Math question created successfully");
     } catch (err) {
       alert("Error creating math question");
@@ -124,5 +124,6 @@ const MathForm = () => {
     </form>
   );
 };
+
 
 export default MathForm;
