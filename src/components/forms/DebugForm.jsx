@@ -48,7 +48,7 @@ const DebugForm = () => {
       test_cases: testCases,
     };
 
-    await axios.post("http://localhost:5000/debug/create", payload);
+    await axios.post("https://one-problem-per-day.onrender.com/debug/create", payload);
 
     alert("Debug problem created successfully");
   };
@@ -140,5 +140,6 @@ const DebugForm = () => {
     </form>
   );
 };
+
 
 export default DebugForm;
